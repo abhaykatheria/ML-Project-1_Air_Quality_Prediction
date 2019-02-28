@@ -83,12 +83,12 @@ def miniBatchGradientDescent(X,Y,maxItr=100, learning_rate = 0.01):
     return (theta,error)
 
 plt.figure(3)
-theta_stochastic, error_stochastic= miniBatchGradientDescent(X,Y,300,0.001)
-sns.lineplot(data = np.array(error_stochastic))
+theta_minibatch, error_minibatch miniBatchGradientDescent(X,Y,300,0.001)
+sns.lineplot(data = np.array(error_minibatch))
 plt.title("Mini Batch Gradient Descent")
 plt.xlabel("Iterations")
 plt.ylabel("Error")
 plt.show()
 
-ans=predictions(X_test,theta_stochastic)
+ans=predictions(X_test,theta_minibatch)
 print(ans)
